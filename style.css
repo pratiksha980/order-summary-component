@@ -1,0 +1,150 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --Blue-100: hsl(225, 100%, 94%);
+  --Blue-700: hsl(245, 75%, 52%);
+
+  --Blue-50: hsl(225, 100%, 98%);
+  --Gray-600: hsl(224, 23%, 55%);
+  --Blue-950: hsl(223, 47%, 23%);
+}
+
+html {
+  font-size: 62.5%;
+}
+.main-container {
+  background-color: var(--Blue-100);
+  background-image: url("./images/pattern-background-mobile.svg");
+  background-repeat: repeat-x;
+  background-position: top center;
+  background-size: contain;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2.5rem;
+}
+@font-face {
+  font-family: "RedHatDisplay";
+  src: url(RedHatDisplay.ttf);
+}
+body {
+  font-family: "RedHatDisplay", sans-serif;
+}
+.sub-container {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  border-radius: 2rem;
+  flex-direction: column;
+  width: min(100%, 37.5rem);
+  background-color: var(--Blue-50);
+}
+.img-container {
+  border-radius: 2rem;
+}
+img {
+  border-top-left-radius: 2rem;
+  border-top-right-radius: 2rem;
+  width: min(100%, 37.5rem);
+  object-fit: cover;
+}
+.content-container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  gap: 3rem;
+  padding: 2rem;
+}
+.icon {
+  width: 3.3rem;
+  height: 3.3rem;
+}
+.icon-container {
+  width: 4.2rem;
+  height: 4.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: var(--Blue-100);
+}
+button {
+  width: 95%;
+  font-size: 1.6rem;
+  padding: 1.2rem;
+  background-color: var(--Blue-700);
+  border: none;
+  border-radius: 1rem;
+
+  color: var(--Blue-50);
+  font-weight: 700;
+  font-family: "RedHatDisplay", sans-serif;
+}
+p {
+  font-size: 1.6rem;
+  color: var(--Gray-600);
+  font-weight: 500;
+}
+
+h1 {
+  margin-block-start: 2rem;
+  font-weight: 900;
+  color: var(--Blue-950);
+}
+button:hover {
+  cursor: pointer;
+  background-color: var(--Blue-950);
+}
+button:active {
+  transform: scale(0.95);
+}
+.price-container {
+  background-color: var(--Blue-50);
+  display: flex;
+  align-items: center;
+  padding: 1.2rem;
+  width: 95%;
+  justify-content: space-between;
+
+  border-radius: 1rem;
+}
+.mix-container {
+  display: flex;
+  gap: 0.8rem;
+}
+.plan-container {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+.plan-title {
+  color: var(--Blue-950);
+  font-weight: 900;
+  font-size: 1.7rem;
+}
+.change {
+  color: var(--Blue-700);
+  font-weight: 700;
+  font-size: 1.5rem;
+  text-decoration: underline;
+}
+.price {
+  font-size: 1.6rem;
+  color: var(--Gray-600);
+  font-weight: 500;
+}
+.cancel-text {
+  font-weight: 900;
+  margin-block-end: 2rem;
+}
+@media (min-width: 600px) {
+  .main-container {
+    background-image: url("./images/pattern-background-desktop.svg");
+    background-size: contain;
+  }
+}
