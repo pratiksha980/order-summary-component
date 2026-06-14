@@ -142,7 +142,7 @@ button:active {
   font-weight: 900;
   margin-block-end: 2rem;
 }
-@media (min-width: 600px) {
+@media (min-width: 37.5rem) {
   .main-container {
     background-image: url("./images/pattern-background-desktop.svg");
     background-size: contain;
